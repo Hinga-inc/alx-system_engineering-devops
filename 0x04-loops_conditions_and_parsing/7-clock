@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# this is a bash script that displays
+#   hours from 0 to 12
+#   displays minutes from 1 to 59
+# using a while loop
+
+i=0 #this is for the hours
+j=1 #this is for the minutes
+
+while [ $i -le 12 ];
+do
+    echo "Hour: $i"
+        while [ $j -le 59 ];
+        do
+            echo $j
+            j=$((j+1))
+        done
+    j=$((1))
+    i=$((i+1))
+
+done

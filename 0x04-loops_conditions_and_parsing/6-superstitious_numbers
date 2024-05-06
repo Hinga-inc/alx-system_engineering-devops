@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# this is a bash script that displays:
+# 4 then "bad luck from china" for the 4th iteration
+# 9 then "bad luck from japan" for the 9th iteration
+# 17 then "bad luck from italy" for the 17th iteration
+# this uses the while loop and case statements
+
+i=1
+while [ $i -le 20 ]
+do
+    echo $i
+    case $i in
+        4) echo "bad luck from China"
+            ;;
+        9) echo "good luck from Japan"
+            ;;
+        17) echo "bad luck from Italy"
+            ;;
+        esac
+    i=$((i+1))
+done
